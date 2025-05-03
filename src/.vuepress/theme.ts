@@ -1,21 +1,21 @@
-import { hopeTheme } from "vuepress-theme-hope";
+import { hopeTheme } from 'vuepress-theme-hope'
 
-import navbar from "./navbar.js";
-import sidebar from "./sidebar.js";
+import navbar from './navbar.js'
+import sidebar from './sidebar.js'
 
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
+  hostname: 'https://eeekw.github.io',
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mister-hope.com",
+    name: 'EK',
+    url: 'https://github.com/eeekw',
   },
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: '/logo.jpeg',
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: 'https://github.com/eeekw/code-docs',
 
-  docsDir: "src",
+  docsDir: 'src',
 
   // 导航栏
   navbar,
@@ -24,22 +24,22 @@ export default hopeTheme({
   sidebar,
 
   // 页脚
-  footer: "默认页脚",
+  footer: '默认页脚',
   displayFooter: true,
 
   // 加密配置
-  encrypt: {
-    config: {
-      "/demo/encrypt.html": {
-        hint: "Password: 1234",
-        password: "1234",
-      },
-    },
-  },
+  // encrypt: {
+  //   config: {
+  //     '/demo/encrypt.html': {
+  //       hint: 'Password: 1234',
+  //       password: '1234',
+  //     },
+  //   },
+  // },
 
   // 多语言配置
   metaLocales: {
-    editLink: "在 GitHub 上编辑此页",
+    editLink: '在 GitHub 上编辑此页',
   },
 
   // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响
@@ -62,14 +62,14 @@ export default hopeTheme({
     spoiler: true,
     stylize: [
       {
-        matcher: "Recommended",
+        matcher: 'Recommended',
         replacer: ({ tag }) => {
-          if (tag === "em")
+          if (tag === 'em')
             return {
-              tag: "Badge",
-              attrs: { type: "tip" },
-              content: "Recommended",
-            };
+              tag: 'Badge',
+              attrs: { type: 'tip' },
+              content: 'Recommended',
+            }
         },
       },
     ],
@@ -120,20 +120,20 @@ export default hopeTheme({
   // 在这里配置主题提供的插件
   plugins: {
     // 注意: 仅用于测试! 你必须自行生成并在生产环境中使用自己的评论服务
-    comment: {
-      provider: "Giscus",
-      repo: "vuepress-theme-hope/giscus-discussions",
-      repoId: "R_kgDOG_Pt2A",
-      category: "Announcements",
-      categoryId: "DIC_kwDOG_Pt2M4COD69",
-    },
+    // comment: {
+    //   provider: 'Giscus',
+    //   repo: 'vuepress-theme-hope/giscus-discussions',
+    //   repoId: 'R_kgDOG_Pt2A',
+    //   category: 'Announcements',
+    //   categoryId: 'DIC_kwDOG_Pt2M4COD69',
+    // },
 
     components: {
-      components: ["Badge", "VPCard"],
+      components: ['Badge', 'VPCard'],
     },
 
     icon: {
-      prefix: "fa6-solid:",
+      prefix: 'fa6-solid:',
     },
 
     // 如果你需要 PWA。安装 @vuepress/plugin-pwa 并取消下方注释
@@ -193,4 +193,4 @@ export default hopeTheme({
     //   },
     // },
   },
-});
+})

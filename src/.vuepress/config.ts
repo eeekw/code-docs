@@ -1,16 +1,16 @@
-import { defineUserConfig } from "vuepress";
+import { defineUserConfig } from 'vuepress'
 
-import theme from "./theme.js";
+import theme from './theme.js'
 
 export default defineUserConfig({
-  base: "/code-docs/",
+  base: '/code-docs/',
 
-  lang: "zh-CN",
-  title: "文档演示",
-  description: "vuepress-theme-hope 的文档演示",
+  lang: 'zh-CN',
+  title: 'EK',
+  description: '「少废话，看代码。」',
 
   theme,
 
   // 和 PWA 一起启用
   // shouldPrefetch: false,
-});
+})
