@@ -11,6 +11,8 @@ export default hopeTheme({
     url: 'https://github.com/eeekw',
   },
 
+  favicon: '/favicon.ico',
+
   logo: '/logo.jpeg',
 
   repo: 'https://github.com/eeekw/code-docs',
